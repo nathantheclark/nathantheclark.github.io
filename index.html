@@ -14,11 +14,16 @@
 
   </head>
   <body>
-
+    <!-- Container for Everything -->
     <div id="container">
-      <h1> Holy Book Reading Online </h1>
+      <!-- Header for the Page -->
+      <header>
+        <h1> Holy Book Reading Online </h1>
+      </header>
+      <!-- Section for the Reading Selection -->
       <section id="selection-pane">
         <div>
+          <!-- Form to specify the reading selection -->
           <form id="reading-selection">
             <label for="book">Choose a book:</label>
             <select id="book" name="book">
@@ -35,10 +40,17 @@
           </form>
         </div>
       </section>
+      <!-- Section for the Reading Pane -->
       <section id="reading-pane">
-
+        <!-- Div for the Selected Text Information -->
+        <div id="text-information">
+          <!-- Add details about the text displayed here with jQuery-->
+        </div>
+        <!-- Div for the Selected Text to Display -->
+        <div id="text-container">
+          <!-- Add text here with jQuery-->
+        </div>
       </section>
     </div>
-
   </body>
 </html>
