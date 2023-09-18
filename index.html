@@ -1,9 +1,44 @@
 <html>
   <head>
     <title>Webpage Title</title>
+
+    <!-- Stylesheets!  -->
+    <link rel="stylesheet" href="/assets/styles.css">
+
+    <!-- This gets jQuery!  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+
+
+    <!-- Javascript for running the front-end -->
+    <script type="application/javascript" src="/assets/script.js"></script>
+
   </head>
   <body>
-    <h1> This is the header</h1>
-    <p> This is the body in the first paragraph.</p>
+
+    <div id="container">
+      <h1> Holy Book Reading Online </h1>
+      <section id="selection-pane">
+        <div>
+          <form id="reading-selection">
+            <label for="book">Choose a book:</label>
+            <select id="book" name="book">
+              <!-- Add options here with jQuery based on books in the NT folder -->
+            </select>
+            <label for="version">Choose a version:</label>
+            <select id="version" name="version">
+              <!-- Add options here with jQuery based on versions in the NT/Book folder -->
+            </select>
+            <label for="chapter">Choose a chapter:</label>
+            <select id="chapter" name="chapter">
+              <!-- Add options here with jQuery based on versions in the NT/Book/Version folder -->
+            </select>
+          </form>
+        </div>
+      </section>
+      <section id="reading-pane">
+
+      </section>
+    </div>
+
   </body>
 </html>
